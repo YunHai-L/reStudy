@@ -9,3 +9,7 @@ diff: 查看修改但未add的部分
 
 log: 查看commit日志
 	参数: --pretty=oneline   只展示一行
+	
+reset: 回退到指定版本
+	参数--head
+		HEAD^: ^表示回退一个版本  ^^表示2个   ~100表示回退100个版本
