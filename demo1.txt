@@ -5,4 +5,7 @@ add: 添加文件到暂存区
 commit: 提交     
 	-m"xx" 注释
 	
-diff: 查看add但未commit的部分
+diff: 查看修改但未add的部分
+
+log: 查看commit日志
+	参数: --pretty=oneline   只展示一行
