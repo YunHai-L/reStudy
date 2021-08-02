@@ -4,3 +4,5 @@ add: 添加文件到暂存区
 	add .: 添加全部
 commit: 提交     
 	-m"xx" 注释
+	
+diff: 查看add但未commit的部分
