@@ -30,7 +30,9 @@ restore --staged [文件名]: 同上
 
 branch: 查看分支
 branch [分支名]: 创建分支
-checkout [分支名]: 切换指定分支
+branch -d [分支名]: 删除分支
+switch [分支名]: 切换指定分支
 
-checkout -b [分支名]: 
-	-b: 创建并切换指定分支
+switch -c [分支名]: -c: 创建并切换指定分支
+merge [分支名]: 将指定分支合并到当前分支
+
