@@ -33,6 +33,7 @@ restore --staged [文件名]: 同上
 branch: 查看分支
 branch [分支名]: 创建分支
 branch -d [分支名]: 删除分支
+branch -D [分支名]: 强制删除分支(未合并的分支)
 switch [分支名]: 切换指定分支
 
 switch -c [分支名]: -c: 创建并切换指定分支
@@ -51,3 +52,13 @@ stach apply [编号]: 恢复被隐藏的进度
 stach pop [编号]: 恢复被隐藏的进度 并删除该stash
 
 cherry-pick [版本号]: 将该提交 在该分支重复一遍
+
+remote: 查看远程库的信息
+remote -v: 查看详细信息(抓取和推送地址)
+
+push [远程分支名] [本地分支名]: 将本地分支推送到远程分支
+
+clone [SSH地址] 将远程库的代码clone到本地
+
+
+
