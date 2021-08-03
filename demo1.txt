@@ -8,14 +8,16 @@ commit: 提交
 diff: 查看修改但未add的部分
 
 log: 查看commit日志
-	参数: --pretty=oneline   只展示一行
+	参数: 	--pretty=oneline   只展示一行
+			--graph		可以查看分支信息
+			--abbrev-commit		只显示版本号开头7位
 reflog: 查看操作日志
 	
 reset: 回退到指定版本
 	参数--head
 		HEAD^: 将HEAD指针往前挪一格
 			^表示回退一个版本  ^^表示2个   ~100表示回退100个版本
-		[版本号后7位]: 跳转到指定版本
+		[版本号]: 跳转到指定版本
 
 版本库: .git文件夹
 暂存区: add添加的地方
@@ -35,6 +37,17 @@ switch [分支名]: 切换指定分支
 
 switch -c [分支名]: -c: 创建并切换指定分支
 merge [分支名]: 将指定分支合并到当前分支
+	参数: 	--on-ff: 本次提交禁用快速合并(Fast forward)模式, 禁用后 合并时会有一个新的commit
+			-m 注释
+	merge --on-ff -m"abc" dev
 
 
 d2+d1
+
+
+stash: 将工作区的进度隐藏, 并将工作区恢复到上一次commit
+stash list: 查看历史stash
+stach apply [编号]: 恢复被隐藏的进度
+stach pop [编号]: 恢复被隐藏的进度 并删除该stash
+
+cherry-pick [版本号]: 将该提交 在该分支重复一遍
